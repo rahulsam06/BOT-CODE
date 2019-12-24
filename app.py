@@ -13,7 +13,7 @@ def sms_reply():
     msg=request.form.get('Body')
 
     resp=MessagingResponse()
-    resp.message(f"you said : {msg}")
+    resp.message(f"you sent msg to me : {msg}")
     return str(resp)
 if __name__=="__main__":
     app.run(debug=True)
